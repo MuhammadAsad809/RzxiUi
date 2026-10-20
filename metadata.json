@@ -1,0 +1,5 @@
+{
+  "name": "Liquid UI",
+  "description": "Liquid UI — liquid-glass React components and interactive 3D experiences",
+  "capabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

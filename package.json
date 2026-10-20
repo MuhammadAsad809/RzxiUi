@@ -2,13 +2,15 @@
   "name": "liquid-ui-monorepo",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "description": "Liquid UI — liquid-glass React components and interactive 3D experiences",
-  "packageManager": "pnpm@10.0.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
   "scripts": {
-    "dev": "pnpm --filter @rzxiui/docs dev",
-    "build": "pnpm -r --if-present build",
-    "typecheck": "pnpm -r --if-present typecheck",
-    "check": "pnpm typecheck",
+    "dev": "npm run dev --workspace=@rzxiui/docs",
+    "build": "npm run build --workspace=@rzxiui/docs",
     "lint": "eslint ."
   },
   "devDependencies": {
